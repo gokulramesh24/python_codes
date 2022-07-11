@@ -1,0 +1,85 @@
+#q-11
+"""
+n= int(input("enter: "))
+for i in range(n):
+    for j in range(i+1):
+        print("*",end="")
+    print()
+"""
+#Q-12
+"""
+string=input("enter a string: ")
+n=int(input("enter no of char to be removed: "))
+new_string=string.replace(string[0:n],"")
+print(new_string)
+"""
+#Q-13
+"""
+input_string = input('Enter elements: ')
+list1 = input_string.split()
+for i in range(len(list1)):
+    list1[i] = int(list1[i])
+    if list1[i]%5==0:
+        print(list1[i],end=" ")
+"""
+#Q-14
+"""
+str1=input("enter your string: ")
+k=0
+for i in range(len(str1)-1):
+    if "Hi"==str1[i:i+2]:
+        k=k+1
+print(k)
+"""
+#Q-15
+"""
+n=int(input("enter: "))
+for i in range(n):
+    for j in range(i+1):
+        print(i+1,end=" ")
+    print()
+"""
+#max/min
+"""
+num1= int(input("enter first number: "))
+num2= int(input("enter second number: "))
+def min(a,b):
+    if a>b:
+        return b
+    else:
+        return a
+def max(a,b):
+    if a<b:
+        return b
+    else:
+        return a
+"""
+#symentric
+"""
+str1=input("enter string: ")
+str2= str(str1[::-1])
+if str1==str2:
+    print("its symentric")
+else:
+    print("not symentric")
+"""
+"""
+tup1= (1,2,3,4,5)
+sum=0
+for i in range(len(tup1)):
+    sum+=tup1[i]
+print(sum)
+"""
+#tuple exercise
+"""
+input_string = input('Enter elements: ')
+list1 = input_string.split()
+for i in range(len(list1)):
+    list1[i] = int(list1[i])
+tup= [[0]*2]*len(list1)
+for i in range(len(list1)):
+    tup[i][0]=list1[i]
+    tup[i][1]=list1[i]**3
+    tup[i]=tuple(tup[i])
+print(tuple(tup))
+"""
